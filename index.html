@@ -103,6 +103,16 @@
   .topbar-cta { color: var(--neon); text-decoration: none; font-weight: 700; }
   .topbar-cta:hover { color: var(--white); }
 
+
+  /* Chicago flag mini strip */
+  .chi-flag::before {
+    content: '★★★★' !important;
+    color: var(--neon) !important;
+    letter-spacing: 1px;
+    font-size: 9px;
+    margin-right: 4px;
+  }
+
   /* NAV */
   .nav {
     position: sticky; top: 0;
@@ -202,6 +212,21 @@
     mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
     -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
     pointer-events: none;
+  }
+
+
+  /* Chicago skyline silhouette in hero */
+  .chicago-skyline {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 180px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200' preserveAspectRatio='xMidYMax slice'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23050b1a' stop-opacity='0.3'/%3E%3Cstop offset='100%25' stop-color='%23050b1a' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C!-- Far buildings --%3E%3Cpath fill='%23182547' opacity='0.4' d='M0,200 L0,140 L40,140 L40,120 L80,120 L80,150 L120,150 L120,100 L160,100 L160,130 L200,130 L200,90 L240,90 L240,110 L280,110 L280,80 L320,80 L320,120 L360,120 L360,70 L400,70 L400,100 L440,100 L440,90 L480,90 L480,60 L520,60 L520,90 L560,90 L560,50 L600,50 L600,80 L640,80 L640,40 L680,40 L680,75 L720,75 L720,30 L760,30 L760,70 L800,70 L800,50 L840,50 L840,85 L880,85 L880,55 L920,55 L920,90 L960,90 L960,65 L1000,65 L1000,105 L1040,105 L1040,75 L1080,75 L1080,115 L1120,115 L1120,85 L1160,85 L1160,125 L1200,125 L1200,95 L1240,95 L1240,135 L1280,135 L1280,105 L1320,105 L1320,145 L1360,145 L1360,115 L1400,115 L1400,155 L1440,155 L1440,200 Z'/%3E%3C!-- Mid buildings --%3E%3Cpath fill='%230a1228' opacity='0.7' d='M0,200 L0,160 L60,160 L60,130 L100,130 L100,150 L140,150 L140,110 L180,110 L180,140 L220,140 L220,100 L260,100 L260,130 L300,130 L300,90 L340,90 L340,120 L380,120 L380,80 L420,80 L420,110 L460,110 L460,75 L500,75 L500,100 L540,100 L540,65 L580,65 L580,85 L620,85 L620,50 L660,50 L660,75 L700,75 L700,40 L740,40 L740,65 L780,65 L780,55 L820,55 L820,80 L860,80 L860,60 L900,60 L900,90 L940,90 L940,70 L980,70 L980,100 L1020,100 L1020,80 L1060,80 L1060,110 L1100,110 L1100,90 L1140,90 L1140,120 L1180,120 L1180,100 L1220,100 L1220,130 L1260,130 L1260,110 L1300,110 L1300,140 L1340,140 L1340,120 L1380,120 L1380,150 L1420,150 L1420,130 L1440,130 L1440,200 Z'/%3E%3C!-- Front buildings (Sears Tower / Trump Tower style) --%3E%3Cpath fill='%23050b1a' d='M0,200 L0,180 L40,180 L40,160 L80,160 L80,140 L120,140 L120,170 L160,170 L160,130 L200,130 L200,160 L240,160 L240,120 L280,120 L280,150 L320,150 L320,110 L360,110 L360,140 L400,140 L400,100 L440,100 L440,130 L480,130 L480,90 L520,90 L520,40 L555,40 L555,30 L585,30 L585,15 L605,15 L605,30 L635,30 L635,40 L670,40 L670,90 L720,90 L720,60 L760,60 L760,50 L800,50 L800,40 L820,40 L820,20 L840,20 L840,40 L860,40 L860,60 L900,60 L900,80 L940,80 L940,70 L980,70 L980,90 L1020,90 L1020,75 L1060,75 L1060,100 L1100,100 L1100,85 L1140,85 L1140,115 L1180,115 L1180,95 L1220,95 L1220,125 L1260,125 L1260,105 L1300,105 L1300,135 L1340,135 L1340,115 L1380,115 L1380,145 L1420,145 L1420,130 L1440,130 L1440,200 Z'/%3E%3C!-- Building lights (windows) --%3E%3Cg fill='%23d11e2e' opacity='0.6'%3E%3Crect x='118' y='150' width='2' height='2'/%3E%3Crect x='125' y='155' width='2' height='2'/%3E%3Crect x='185' y='140' width='2' height='2'/%3E%3Crect x='195' y='145' width='2' height='2'/%3E%3Crect x='245' y='130' width='2' height='2'/%3E%3Crect x='255' y='125' width='2' height='2'/%3E%3Crect x='265' y='135' width='2' height='2'/%3E%3Crect x='325' y='120' width='2' height='2'/%3E%3Crect x='335' y='115' width='2' height='2'/%3E%3Crect x='405' y='110' width='2' height='2'/%3E%3Crect x='415' y='105' width='2' height='2'/%3E%3Crect x='483' y='100' width='2' height='2'/%3E%3Crect x='495' y='95' width='2' height='2'/%3E%3Crect x='540' y='50' width='2' height='2'/%3E%3Crect x='545' y='60' width='2' height='2'/%3E%3Crect x='540' y='70' width='2' height='2'/%3E%3Crect x='590' y='25' width='2' height='2'/%3E%3Crect x='595' y='40' width='2' height='2'/%3E%3Crect x='615' y='30' width='2' height='2'/%3E%3Crect x='620' y='45' width='2' height='2'/%3E%3Crect x='645' y='50' width='2' height='2'/%3E%3Crect x='655' y='65' width='2' height='2'/%3E%3Crect x='680' y='100' width='2' height='2'/%3E%3Crect x='690' y='110' width='2' height='2'/%3E%3Crect x='700' y='105' width='2' height='2'/%3E%3Crect x='730' y='75' width='2' height='2'/%3E%3Crect x='740' y='80' width='2' height='2'/%3E%3Crect x='770' y='65' width='2' height='2'/%3E%3Crect x='780' y='75' width='2' height='2'/%3E%3Crect x='810' y='55' width='2' height='2'/%3E%3Crect x='825' y='30' width='2' height='2'/%3E%3Crect x='830' y='45' width='2' height='2'/%3E%3Crect x='850' y='30' width='2' height='2'/%3E%3Crect x='870' y='70' width='2' height='2'/%3E%3Crect x='880' y='80' width='2' height='2'/%3E%3Crect x='910' y='75' width='2' height='2'/%3E%3Crect x='920' y='90' width='2' height='2'/%3E%3Crect x='950' y='85' width='2' height='2'/%3E%3Crect x='990' y='100' width='2' height='2'/%3E%3Crect x='1000' y='115' width='2' height='2'/%3E%3Crect x='1030' y='90' width='2' height='2'/%3E%3Crect x='1050' y='115' width='2' height='2'/%3E%3Crect x='1075' y='95' width='2' height='2'/%3E%3Crect x='1090' y='110' width='2' height='2'/%3E%3Crect x='1115' y='100' width='2' height='2'/%3E%3Crect x='1125' y='110' width='2' height='2'/%3E%3Crect x='1155' y='105' width='2' height='2'/%3E%3Crect x='1185' y='130' width='2' height='2'/%3E%3Crect x='1195' y='115' width='2' height='2'/%3E%3Crect x='1225' y='115' width='2' height='2'/%3E%3Crect x='1245' y='130' width='2' height='2'/%3E%3Crect x='1265' y='115' width='2' height='2'/%3E%3Crect x='1295' y='125' width='2' height='2'/%3E%3Crect x='1315' y='140' width='2' height='2'/%3E%3Crect x='1345' y='130' width='2' height='2'/%3E%3Crect x='1375' y='130' width='2' height='2'/%3E%3Crect x='1395' y='150' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.95;
   }
 
   .hero-grid {
@@ -1381,6 +1406,159 @@
   .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
+
+  /* === CHICAGO PRIDE SECTION === */
+  .chicago-section {
+    padding: 120px 32px;
+    background: var(--midnight);
+    color: var(--bone);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .chicago-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 50% 100%, rgba(209,30,46,0.18), transparent 60%),
+      radial-gradient(circle at 0% 0%, rgba(31,58,133,0.15), transparent 50%),
+      radial-gradient(circle at 100% 0%, rgba(31,58,133,0.15), transparent 50%);
+    pointer-events: none;
+  }
+  .chicago-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 250px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200' preserveAspectRatio='xMidYMax slice'%3E%3Cpath fill='%23ffffff' opacity='0.04' d='M0,200 L0,160 L60,160 L60,130 L100,130 L100,150 L140,150 L140,110 L180,110 L180,140 L220,140 L220,100 L260,100 L260,130 L300,130 L300,90 L340,90 L340,120 L380,120 L380,80 L420,80 L420,110 L460,110 L460,75 L500,75 L500,100 L540,100 L540,65 L580,65 L580,85 L620,85 L620,50 L660,50 L660,75 L700,75 L700,40 L740,40 L740,65 L780,65 L780,55 L820,55 L820,80 L860,80 L860,60 L900,60 L900,90 L940,90 L940,70 L980,70 L980,100 L1020,100 L1020,80 L1060,80 L1060,110 L1100,110 L1100,90 L1140,90 L1140,120 L1180,120 L1180,100 L1220,100 L1220,130 L1260,130 L1260,110 L1300,110 L1300,140 L1340,140 L1340,120 L1380,120 L1380,150 L1420,150 L1420,130 L1440,130 L1440,200 Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: bottom;
+    pointer-events: none;
+  }
+  .chicago-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+  }
+  .chi-stars {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .chi-star {
+    width: 36px; height: 36px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d11e2e'%3E%3Cpolygon points='12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 8px rgba(209,30,46,0.5));
+    animation: starpulse 3s ease-in-out infinite;
+  }
+  .chi-star:nth-child(1) { animation-delay: 0s; }
+  .chi-star:nth-child(2) { animation-delay: 0.3s; }
+  .chi-star:nth-child(3) { animation-delay: 0.6s; }
+  .chi-star:nth-child(4) { animation-delay: 0.9s; }
+  @keyframes starpulse {
+    0%,100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  .chi-eyebrow { color: var(--neon-2) !important; justify-content: center; }
+  .chi-eyebrow::before { background: var(--neon) !important; }
+  .chi-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(38px, 5.5vw, 72px);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    margin-bottom: 22px;
+    color: var(--bone);
+  }
+  .chi-title .italic {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--chrome);
+  }
+  .chi-title .chi-accent {
+    color: var(--neon);
+  }
+  .chi-sub {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--gray-soft);
+    max-width: 720px;
+    margin: 0 auto 50px;
+  }
+  .chi-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+  }
+  .chi-stat {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 26px 18px;
+    transition: all 0.3s;
+  }
+  .chi-stat:hover {
+    background: rgba(209,30,46,0.08);
+    border-color: var(--neon);
+    transform: translateY(-4px);
+  }
+  .chi-stat-num {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 0.9;
+    color: var(--neon);
+    letter-spacing: -0.035em;
+    margin-bottom: 8px;
+  }
+  .chi-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--gray-soft);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .chi-neighborhoods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .chi-neighborhoods span {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--bone);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: default;
+  }
+  .chi-neighborhoods span:hover {
+    background: var(--neon);
+    border-color: var(--neon);
+    color: var(--white);
+  }
+  @media (max-width: 900px) {
+    .chicago-section { padding: 80px 18px; }
+    .chi-stars { gap: 16px; margin-bottom: 24px; }
+    .chi-star { width: 28px; height: 28px; }
+    .chi-stats { grid-template-columns: 1fr; gap: 12px; }
+    .chi-stat-num { font-size: 36px; }
+    .chi-neighborhoods { gap: 6px; }
+    .chi-neighborhoods span { font-size: 12px; padding: 7px 12px; }
+  }
+
   /* RESPONSIVE */
   @media (max-width: 1100px) {
     .services-grid { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; }
@@ -1398,7 +1576,22 @@
     .logo-text .sub { font-size: 8.5px; }
 
     .hero { padding: 50px 18px 80px; }
-    .hero-grid { grid-template-columns: 1fr; gap: 50px; }
+  
+  /* Chicago skyline silhouette in hero */
+  .chicago-skyline {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 180px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200' preserveAspectRatio='xMidYMax slice'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23050b1a' stop-opacity='0.3'/%3E%3Cstop offset='100%25' stop-color='%23050b1a' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C!-- Far buildings --%3E%3Cpath fill='%23182547' opacity='0.4' d='M0,200 L0,140 L40,140 L40,120 L80,120 L80,150 L120,150 L120,100 L160,100 L160,130 L200,130 L200,90 L240,90 L240,110 L280,110 L280,80 L320,80 L320,120 L360,120 L360,70 L400,70 L400,100 L440,100 L440,90 L480,90 L480,60 L520,60 L520,90 L560,90 L560,50 L600,50 L600,80 L640,80 L640,40 L680,40 L680,75 L720,75 L720,30 L760,30 L760,70 L800,70 L800,50 L840,50 L840,85 L880,85 L880,55 L920,55 L920,90 L960,90 L960,65 L1000,65 L1000,105 L1040,105 L1040,75 L1080,75 L1080,115 L1120,115 L1120,85 L1160,85 L1160,125 L1200,125 L1200,95 L1240,95 L1240,135 L1280,135 L1280,105 L1320,105 L1320,145 L1360,145 L1360,115 L1400,115 L1400,155 L1440,155 L1440,200 Z'/%3E%3C!-- Mid buildings --%3E%3Cpath fill='%230a1228' opacity='0.7' d='M0,200 L0,160 L60,160 L60,130 L100,130 L100,150 L140,150 L140,110 L180,110 L180,140 L220,140 L220,100 L260,100 L260,130 L300,130 L300,90 L340,90 L340,120 L380,120 L380,80 L420,80 L420,110 L460,110 L460,75 L500,75 L500,100 L540,100 L540,65 L580,65 L580,85 L620,85 L620,50 L660,50 L660,75 L700,75 L700,40 L740,40 L740,65 L780,65 L780,55 L820,55 L820,80 L860,80 L860,60 L900,60 L900,90 L940,90 L940,70 L980,70 L980,100 L1020,100 L1020,80 L1060,80 L1060,110 L1100,110 L1100,90 L1140,90 L1140,120 L1180,120 L1180,100 L1220,100 L1220,130 L1260,130 L1260,110 L1300,110 L1300,140 L1340,140 L1340,120 L1380,120 L1380,150 L1420,150 L1420,130 L1440,130 L1440,200 Z'/%3E%3C!-- Front buildings (Sears Tower / Trump Tower style) --%3E%3Cpath fill='%23050b1a' d='M0,200 L0,180 L40,180 L40,160 L80,160 L80,140 L120,140 L120,170 L160,170 L160,130 L200,130 L200,160 L240,160 L240,120 L280,120 L280,150 L320,150 L320,110 L360,110 L360,140 L400,140 L400,100 L440,100 L440,130 L480,130 L480,90 L520,90 L520,40 L555,40 L555,30 L585,30 L585,15 L605,15 L605,30 L635,30 L635,40 L670,40 L670,90 L720,90 L720,60 L760,60 L760,50 L800,50 L800,40 L820,40 L820,20 L840,20 L840,40 L860,40 L860,60 L900,60 L900,80 L940,80 L940,70 L980,70 L980,90 L1020,90 L1020,75 L1060,75 L1060,100 L1100,100 L1100,85 L1140,85 L1140,115 L1180,115 L1180,95 L1220,95 L1220,125 L1260,125 L1260,105 L1300,105 L1300,135 L1340,135 L1340,115 L1380,115 L1380,145 L1420,145 L1420,130 L1440,130 L1440,200 Z'/%3E%3C!-- Building lights (windows) --%3E%3Cg fill='%23d11e2e' opacity='0.6'%3E%3Crect x='118' y='150' width='2' height='2'/%3E%3Crect x='125' y='155' width='2' height='2'/%3E%3Crect x='185' y='140' width='2' height='2'/%3E%3Crect x='195' y='145' width='2' height='2'/%3E%3Crect x='245' y='130' width='2' height='2'/%3E%3Crect x='255' y='125' width='2' height='2'/%3E%3Crect x='265' y='135' width='2' height='2'/%3E%3Crect x='325' y='120' width='2' height='2'/%3E%3Crect x='335' y='115' width='2' height='2'/%3E%3Crect x='405' y='110' width='2' height='2'/%3E%3Crect x='415' y='105' width='2' height='2'/%3E%3Crect x='483' y='100' width='2' height='2'/%3E%3Crect x='495' y='95' width='2' height='2'/%3E%3Crect x='540' y='50' width='2' height='2'/%3E%3Crect x='545' y='60' width='2' height='2'/%3E%3Crect x='540' y='70' width='2' height='2'/%3E%3Crect x='590' y='25' width='2' height='2'/%3E%3Crect x='595' y='40' width='2' height='2'/%3E%3Crect x='615' y='30' width='2' height='2'/%3E%3Crect x='620' y='45' width='2' height='2'/%3E%3Crect x='645' y='50' width='2' height='2'/%3E%3Crect x='655' y='65' width='2' height='2'/%3E%3Crect x='680' y='100' width='2' height='2'/%3E%3Crect x='690' y='110' width='2' height='2'/%3E%3Crect x='700' y='105' width='2' height='2'/%3E%3Crect x='730' y='75' width='2' height='2'/%3E%3Crect x='740' y='80' width='2' height='2'/%3E%3Crect x='770' y='65' width='2' height='2'/%3E%3Crect x='780' y='75' width='2' height='2'/%3E%3Crect x='810' y='55' width='2' height='2'/%3E%3Crect x='825' y='30' width='2' height='2'/%3E%3Crect x='830' y='45' width='2' height='2'/%3E%3Crect x='850' y='30' width='2' height='2'/%3E%3Crect x='870' y='70' width='2' height='2'/%3E%3Crect x='880' y='80' width='2' height='2'/%3E%3Crect x='910' y='75' width='2' height='2'/%3E%3Crect x='920' y='90' width='2' height='2'/%3E%3Crect x='950' y='85' width='2' height='2'/%3E%3Crect x='990' y='100' width='2' height='2'/%3E%3Crect x='1000' y='115' width='2' height='2'/%3E%3Crect x='1030' y='90' width='2' height='2'/%3E%3Crect x='1050' y='115' width='2' height='2'/%3E%3Crect x='1075' y='95' width='2' height='2'/%3E%3Crect x='1090' y='110' width='2' height='2'/%3E%3Crect x='1115' y='100' width='2' height='2'/%3E%3Crect x='1125' y='110' width='2' height='2'/%3E%3Crect x='1155' y='105' width='2' height='2'/%3E%3Crect x='1185' y='130' width='2' height='2'/%3E%3Crect x='1195' y='115' width='2' height='2'/%3E%3Crect x='1225' y='115' width='2' height='2'/%3E%3Crect x='1245' y='130' width='2' height='2'/%3E%3Crect x='1265' y='115' width='2' height='2'/%3E%3Crect x='1295' y='125' width='2' height='2'/%3E%3Crect x='1315' y='140' width='2' height='2'/%3E%3Crect x='1345' y='130' width='2' height='2'/%3E%3Crect x='1375' y='130' width='2' height='2'/%3E%3Crect x='1395' y='150' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.95;
+  }
+
+  .hero-grid { grid-template-columns: 1fr; gap: 50px; }
     .hero-visual { height: 480px; order: -1; }
     .review-float { left: 0; max-width: 200px; padding: 11px 14px; }
     .review-text { font-size: 11.5px; }
@@ -1456,7 +1649,7 @@
 
 <div class="topbar">
   <div class="topbar-left">
-    <span>CHICAGO · ILLINOIS</span>
+    <span class="chi-flag">CHICAGO BORN & BUILT</span>
     <span>COMMERCIAL & RESIDENTIAL</span>
     <span>FREE ESTIMATES</span>
   </div>
@@ -1484,15 +1677,16 @@
 <!-- HERO -->
 <section class="hero">
   <div class="particles" id="particlesHero"></div>
+  <div class="chicago-skyline"></div>
   <div class="hero-grid">
     <div class="hero-content">
-      <div class="hero-eyebrow"><span class="dot"></span> Chicago's Premier Floor Specialists</div>
+      <div class="hero-eyebrow"><span class="dot"></span> ★★★★ CHICAGO'S PREMIER FLOORING SPECIALISTS</div>
       <h1 class="hero-title">
-        Floors that<br>
-        <span class="neon">don't just last —</span><br>
-        <span class="italic">they shine.</span>
+        Built tough.<br>
+        Built <span class="neon">in Chicago.</span><br>
+        <span class="italic">Built to last.</span>
       </h1>
-      <p class="hero-sub">Epoxy, polished concrete, urethane, metallic, stained — done right. From your garage to a 50,000 sqft warehouse, JC1 turns concrete into something worth showing off.</p>
+      <p class="hero-sub">Born and raised in the Windy City. From Lincoln Park garages to West Loop warehouses, JC1 turns Chicago concrete into something worth showing off — epoxy, polished, metallic, stained, done right.</p>
 
       <div class="hero-cta-row">
         <a href="tel:7085434683" class="btn btn-primary">
@@ -1550,8 +1744,8 @@
 <!-- MARQUEE -->
 <section class="marquee-section">
   <div class="marquee">
-    <span>Epoxy</span><span>Polished Concrete</span><span>Urethane Mortar</span><span>Metallic</span><span>Stained Concrete</span><span>Flake System</span><span>Colored Sand</span><span>Garage Floors</span>
-    <span>Epoxy</span><span>Polished Concrete</span><span>Urethane Mortar</span><span>Metallic</span><span>Stained Concrete</span><span>Flake System</span><span>Colored Sand</span><span>Garage Floors</span>
+    <span>★ Chicago Built</span><span>Epoxy</span><span>Polished Concrete</span><span>Urethane Mortar</span><span>Metallic</span><span>Stained Concrete</span><span>Flake System</span><span>Colored Sand</span><span>★ Chicago Built</span>
+    <span>★ Chicago Built</span><span>Epoxy</span><span>Polished Concrete</span><span>Urethane Mortar</span><span>Metallic</span><span>Stained Concrete</span><span>Flake System</span><span>Colored Sand</span><span>★ Chicago Built</span>
   </div>
 </section>
 
@@ -1662,6 +1856,56 @@
   </div>
 </section>
 
+
+<!-- CHICAGO PRIDE -->
+<section class="chicago-section">
+  <div class="chicago-bg"></div>
+  <div class="section-inner chicago-inner">
+    <div class="chi-stars">
+      <span class="chi-star"></span>
+      <span class="chi-star"></span>
+      <span class="chi-star"></span>
+      <span class="chi-star"></span>
+    </div>
+    <div class="section-eyebrow chi-eyebrow">From the Windy City</div>
+    <h2 class="chi-title">We're not <span class="italic">"based"</span> in Chicago.<br><span class="chi-accent">We ARE Chicago.</span></h2>
+    <p class="chi-sub">Born here. Built here. Family-owned and Chicago-proud. From the West Loop to the South Side, from Lincoln Park lofts to Pilsen warehouses — we know this city's concrete because it's our concrete. We've been laying it for years.</p>
+
+    <div class="chi-stats">
+      <div class="chi-stat">
+        <div class="chi-stat-num">100%</div>
+        <div class="chi-stat-label">Chicago Owned</div>
+      </div>
+      <div class="chi-stat">
+        <div class="chi-stat-num">50+</div>
+        <div class="chi-stat-label">Neighborhoods Served</div>
+      </div>
+      <div class="chi-stat">
+        <div class="chi-stat-num">$0</div>
+        <div class="chi-stat-label">Travel Fees in Chicagoland</div>
+      </div>
+    </div>
+
+    <div class="chi-neighborhoods">
+      <span>Lincoln Park</span>
+      <span>West Loop</span>
+      <span>Wicker Park</span>
+      <span>Logan Square</span>
+      <span>South Loop</span>
+      <span>River North</span>
+      <span>Pilsen</span>
+      <span>Bucktown</span>
+      <span>Old Town</span>
+      <span>Uptown</span>
+      <span>Lakeview</span>
+      <span>Bridgeport</span>
+      <span>Hyde Park</span>
+      <span>Rogers Park</span>
+      <span>+ all suburbs</span>
+    </div>
+  </div>
+</section>
+
 <!-- WHY US -->
 <section class="section" id="why">
   <div class="section-inner">
@@ -1756,7 +2000,7 @@
   <div class="section-inner">
     <div style="text-align: center;">
       <div class="section-eyebrow" style="justify-content: center;">Where we serve</div>
-      <h2 class="section-title">All of <span class="accent">Chicagoland.</span></h2>
+      <h2 class="section-title">From the <span class="accent">Loop</span> to the <span class="accent">'burbs.</span></h2>
     </div>
     <div class="areas-grid reveal">
       <div class="area-pill">Chicago</div>
@@ -1833,7 +2077,7 @@
   </div>
   <div class="footer-bottom">
     <span>© 2026 JC1 FLOORING SOLUTION LLC</span>
-    <span>LICENSED · INSURED · CHICAGO, IL</span>
+    <span>★ BUILT IN CHICAGO · LICENSED & INSURED ★</span>
   </div>
 </footer>
 
